@@ -13,18 +13,11 @@ class App extends Component {
         <AmplifySignOut />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          </header>
+          <h1>Sample App</h1>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            これはサンプルで作成したアプリです。
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
       </div>
     );
   }
