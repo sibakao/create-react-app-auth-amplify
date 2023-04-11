@@ -15,7 +15,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           </header>
           <h1>Sample App</h1>
-          <p>これはWeb版VisualStudioで修正したアプリです。</p>
+          <p>これは2023年4月11日にWeb版VisualStudioで修正したアプリです。</p>
       </div>
     );
   }
