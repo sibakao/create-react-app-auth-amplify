@@ -5,8 +5,15 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
+import { View, Text, StyleSheet} from 'react-native';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: new Date().toLocaleString()
+    };
+  }
   render() {
     return (
       <div className="App">
@@ -15,7 +22,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           </header>
           <h1>Sample App</h1>
-          <p>これは2023年4月11日にWeb版VisualStudioで修正したアプリです。</p>
+          <p>これは{this.state.current}にWeb版VisualStudioで修正したアプリです。</p>
       </div>
     );
   }
